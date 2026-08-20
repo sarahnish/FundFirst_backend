@@ -12,8 +12,8 @@ from pydantic import BaseModel, Field
 
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_DIR = BASE_DIR / "models"
-MODEL_PATH = MODEL_DIR / "fundfirst_logistic_regression.joblib"
-METADATA_PATH = MODEL_DIR / "fundfirst_model_metadata.json"
+MODEL_PATH = BASE_DIR / "fundfirst_logistic_regression.joblib"
+METADATA_PATH = BASE_DIR / "fundfirst_model_metadata.json"
 
 model = joblib.load(MODEL_PATH)
 with METADATA_PATH.open(encoding="utf-8") as metadata_file:
