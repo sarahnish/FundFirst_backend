@@ -1,0 +1,24 @@
+{
+    "model_name": "FundFirst Logistic Regression",
+    "selected_model": "Logistic Regression",
+    "features": [
+        "AveragePrice",
+        "MedianAnnualPay",
+        "SavingRatio",
+        "BaseRate"
+    ],
+    "classes": [
+        "Achievable",
+        "Stretch",
+        "Unfeasible"
+    ],
+    "achievable_max_months": 72,
+    "stretch_max_months": 108,
+    "deposit_rate": 0.1,
+    "active_saving_rate": 0.2,
+    "development_period": "2014-2023",
+    "test_period": "2024-2025",
+    "test_accuracy": 0.8333333333333334,
+    "test_macro_f1": 0.7777777777777778,
+    "disclaimer": "FundFirst is an educational research prototype and does not provide regulated financial advice."
+}
