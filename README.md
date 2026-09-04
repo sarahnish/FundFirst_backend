@@ -1,8 +1,6 @@
 # FundFirst backend for Lovable
 
-This package serves the real FundFirst Logistic Regression pipeline through a small FastAPI service. The model was reproduced from the submitted notebook's final training procedure: `StandardScaler` followed by balanced `LogisticRegression`, fitted on the 2014–2023 rows of the 72-row labelled FundFirst dataset.
-
-The submitted notebook was inspected only and was not changed.
+This package serves the real FundFirst Logistic Regression pipeline through a small FastAPI service. The deployed pipeline reproduces the final FundFirst training procedure: `StandardScaler` followed by balanced `LogisticRegression`, fitted on the 2014–2023 development data.
 
 ## Package contents
 
@@ -82,6 +80,6 @@ Set Lovable's `VITE_API_URL` environment variable to the deployed backend URL wi
 
 Use `prediction` and `probabilities` from the response as the only prediction source. Do not recreate the model, its scaling, or the TSM thresholds in the frontend.
 
-## Important interpretation
+## Important
 
 The pipeline reproduces the project's rule-generated deposit-feasibility labels. It does not determine mortgage eligibility, creditworthiness, or mortgage approval and does not provide regulated financial advice.
